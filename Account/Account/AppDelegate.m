@@ -6,7 +6,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import <OneKit/OneKitApp.h>
 @interface AppDelegate ()
 
 @end
@@ -16,6 +16,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [OneKitApp startWithLaunchOptions:launchOptions];
     return YES;
 }
 

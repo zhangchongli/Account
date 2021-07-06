@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>services</key>
+	<dict/>
+	<key>version</key>
+	<integer>1</integer>
+	<key>project_info</key>
+	<dict>
+		<key>is_inhouse_app</key>
+		<integer>1</integer>
+		<key>ak</key>
+		<string>b7a667018ea9645f89bee2b2e216f4af</string>
+		<key>sk</key>
+		<string>4ad97e6798c57d3cb7d819653b9116f9</string>
+		<key>app_id</key>
+		<string>10003170</string>
+	</dict>
+</dict>
+</plist>
