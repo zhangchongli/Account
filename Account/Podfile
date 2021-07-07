@@ -7,14 +7,18 @@ source 'https://cdn.cocoapods.org/'
 
 target 'Account' do
   # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
 
   # Pods for Account
-  pod 'VEAppUpdateHelper', :subspecs => [
-        'VEUpdateHelper',
-        'VEUpdateView'
-    ]
+#  pod 'VEAppUpdateHelper', :path => '../../VEAppUpdateHelper/VEAppUpdateHelper.podspec', :subspecs=>[
+#  'VEUpdateHelper',
+#  'VEUpdateView'
+#  ]
 	
+  pod 'VEAppUpdateHelper', :subspecs=>[
+  'VEUpdateHelper',
+  'VEUpdateView'
+  ]
+  
   pod 'RangersAppLog', :subspecs => [
         'Core',
         'Host/CN',

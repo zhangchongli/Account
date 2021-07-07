@@ -37,14 +37,17 @@
         TTAppUpdateHelperDefault *defaultHelper = [[TTAppUpdateHelperDefault alloc] initWithDeviceID:deviceService.deviceID channel:@"beta" aid:info.appID delegate:self];
         self.updateHelper = defaultHelper;
         self.updateHelper.callType = @(0);
-        self.updateHelper.city = @"Shanghai";
         [defaultHelper startCheckVersion];
     }
 }
 
 #pragma mark TTAppUpdateDelegate
-- (void)updateViewShouldShow:(TTAppUpdateTipView *)tipView {
-    [tipView show];
+- (void)updateViewShouldShow:(TTAppUpdateTipView *)tipView model:(TTAppUpdateModel *)model {
+    //弹窗开启弹窗
+    if ([model.enable_popup boolValue]) {
+        [tipView show];
+    }
+    //弹窗关闭业务自己处理数据，不用处理tipView
 }
 
 - (void)updateViewShouldClosed:(TTAppUpdateTipView *)tipView {
