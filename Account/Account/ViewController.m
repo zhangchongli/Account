@@ -40,6 +40,7 @@
         self.updateHelper.user_department = @"test";
         self.updateHelper = defaultHelper;
         self.updateHelper.callType = @(0);
+        self.updateHelper.city = @"shanghai";
         [defaultHelper startCheckVersion];
     }
 }
