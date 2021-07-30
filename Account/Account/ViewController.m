@@ -35,10 +35,10 @@
         __block id<OKDeviceService> deviceService = [[OKServiceCenter sharedInstance] serviceForProtocol:@protocol(OKDeviceService)];
         OKApplicationInfo *info = [OKApplicationInfo sharedInstance];
         TTAppUpdateHelperDefault *defaultHelper = [[TTAppUpdateHelperDefault alloc] initWithDeviceID:deviceService.deviceID channel:@"beta" aid:info.appID delegate:self];
+        self.updateHelper = defaultHelper;
         self.updateHelper.user_id = @"123456";
         self.updateHelper.user_role = @"00010002";
         self.updateHelper.user_department = @"DP09105";
-        self.updateHelper = defaultHelper;
         self.updateHelper.callType = @(0);
         self.updateHelper.city = @"shanghai";
         [defaultHelper startCheckVersion];
