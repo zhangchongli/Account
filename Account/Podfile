@@ -19,7 +19,7 @@ target 'Account' do
   'VEUpdateView'
   ]
   
-  pod 'RangersAppLog', :subspecs => [
+  pod 'RangersAppLog', '6.2.0', :subspecs => [
         'Core',
         'Host/CN',
         'OneKit',
