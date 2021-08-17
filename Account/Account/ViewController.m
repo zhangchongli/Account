@@ -59,3 +59,4 @@
     self.updateHelper = nil;
 }
 @end
+//WZL
